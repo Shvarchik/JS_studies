@@ -1,0 +1,36 @@
+﻿<!-- Задание 1
+Необходимо создать переменную в которой будет храниться температура в градусах Цельсия, преобразовать значение в температуру по фаренгейту.
+Формула перевода градусов Цельсия в градусы Фаренгейта: 
+градусы Фаренгейта = (9 / 5) * градусы Цельсия + 32
+Вывести в консоль температуру в Цельсиях и Фаренгейтах.
+
+Задание 2
+Необходимо создать переменную name, записать в эту переменную свое имя. Необходимо также создать переменную admin и присвоить этой переменной значение из переменной name. Вывести значение переменной admin в консоль. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Homework1</title>
+</head>
+
+<body>
+
+    <script>
+        function round(value, decimals) {
+            return Number(Math.round(value + 'e' + decimals) + 'e-' + decimals);
+        }
+
+        let temperatureCels = 15.5;
+        let temperatureFar = (9 / 5) * temperatureCels + 32;
+        console.log(`температура по Цельсию: ${temperatureCels}\nтемпература по Фаренгейту: ${round(temperatureFar, 2)}`);
+
+        var name = "Inna";
+        var admin = name;
+        console.log("admin:", admin);
+    </script>
+</body>
+
+</html>
