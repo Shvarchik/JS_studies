@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Урок 2</title>
+</head>
+
+<body>
+    <script>
+        let age = Number(prompt('Ваш возраст?'));
+        alert(`Возраст пользователя ${age} лет`);
+        let name = prompt(`Ваше имя?`);
+        alert((name !== '') ? `Добро пожаловать на сайт, ${name}!` : `Так и не познакомились((`);
+
+
+
+        let a = Number(prompt('Введите первое число'));
+        let b = Number(prompt('Введите второе число'));
+        console.log(`Сумма чисел равна ${a + b}
+        Разность чисел равна ${a - b}
+        Произведение чисел равно ${a * b}
+        Частное чисел равно ${a / b}
+        Остаток от деления чисел равен ${a % b}`);
+
+
+        let num = Number(prompt('Введите число'));
+        if (num === 5) {
+            console.log("Число равно 5");
+        } else console.log((num > 5) ? "число больше 5" : "число меньше 5");
+
+    </script>
+
+
+</body>
+
+</html>
